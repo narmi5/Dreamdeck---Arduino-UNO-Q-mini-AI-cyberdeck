@@ -17,7 +17,7 @@ For this device you will need two components:
 1. Connect the ESP32 CYD to your pc and open the display sketch on the Arduino IDE
 2. Go to boards manager (second icon on the vertical bar on the left) and download esp32 by Espressif Systems
 3. In the board connection settings, set the board as "ESP32 Wrover Module"
-4. Download the following libraries from the library manager: ArduinoWebsockets by Gil Maimon, TFT_eSPI by Bodmer, XPT2046_Touchscreen by Paul
+4. Download the following libraries from the library manager: ArduinoWebsockets by Gil Maimon, TFT_eSPI by Bodmer, XPT2046_Touchscreen by Paul Stoffregen
 5. On your PC, head to Documents/Arduino/libraries/TFT_eSPI and replace User_Setup and User_Setup_Select with the provided files
 6. Upload the sketch to the ESP32 CYD
 
