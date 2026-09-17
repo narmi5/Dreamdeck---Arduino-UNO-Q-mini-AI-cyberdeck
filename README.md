@@ -27,6 +27,6 @@ To have both boards running with only one plugged grab the JST wires provided wi
 
 # Notes
 
-You can attach the UNO Q to a powerbank so that it works as a standalone device.
-When plugging/turning on the device, the CYD will fail its initial attempt to connect to the UNO Q, that's completely normal since the Arduino is still booting. When ready, a pulsing heart animation will appear on the LED matrix; when that happens, press the RESET button on the back of the CYD so that it's able to connect.
-Since the display is quite small, use the stylus to type on the keyboard.
+1. You can attach the UNO Q to a powerbank so that it works as a standalone device.
+2. When plugging/turning on the device, the CYD will fail its initial attempt to connect to the UNO Q, that's completely normal since the Arduino is still booting. When ready, a pulsing heart animation will appear on the LED matrix; when that happens, press the RESET button on the back of the CYD so that it's able to connect.
+3. Since the display is quite small, use the stylus to type on the keyboard.
