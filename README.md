@@ -1,15 +1,15 @@
 # Portable-AI-device
 
 For this device you will need two components:
-Arduino UNO Q ( https://www.amazon.com/ABX00173-Dragonwing-microprocessor-STM32U585-Microcontroller/dp/B0GFN669S4/ )
-Freenove ESP32 CYD ( https://www.amazon.com/FREENOVE-ESP32-Display-Screen-240x320/dp/B0GVXSXD7Q/ )
+1. Arduino UNO Q ( https://www.amazon.com/ABX00173-Dragonwing-microprocessor-STM32U585-Microcontroller/dp/B0GFN669S4/ )
+2. Freenove ESP32 CYD ( https://www.amazon.com/FREENOVE-ESP32-Display-Screen-240x320/dp/B0GVXSXD7Q/ )
 
 # Setup for Arduino UNO Q
 
 1. Go into the app lab, then go to apps, click on create new app - import app and select the zip folder "uno-q-ai".
 2. Run the program once so it can set up and download all the libraries then stop it once it's fully booted.
 3. Open the command prompt and create the hotspot connection that we'll need to make the UNO Q communicate with the ESP32 CYD by issuing this command: `sudo nmcli device wifi hotspot ssid CYD_AI_Mesh password ArduinoUnoQ123`
-4. To start the hotspot then type this into the command prompt and hit send: sudo nmcli connection up CYD_AI_Mesh
+4. To start the hotspot then type this into the command prompt and hit send: `sudo nmcli connection up CYD_AI_Mesh`
 5. To make the hotspot automatically turn on when starting the board (so that it works when using it on your standalone device once finished without needing to start it manually): `sudo nmcli connection modify CYD_AI_Mesh connection.autoconnect yes`
 
 # Setup for ESP32 CYD
