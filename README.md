@@ -7,10 +7,11 @@ For this device you will need two components:
 # Setup for Arduino UNO Q
 
 1. Go into the app lab, then go to apps, click on create new app - import app and select the zip folder "uno-q-ai".
-2. Run the program once so it can set up and download all the libraries then stop it once it's fully booted.
-3. Open the command prompt on the app lab and create the hotspot connection that we'll need to make the UNO Q communicate with the ESP32 CYD by issuing this command: `sudo nmcli device wifi hotspot ssid CYD_AI_Mesh password ArduinoUnoQ123`
-4. To start the hotspot then type this into the command prompt and hit send: `sudo nmcli connection up CYD_AI_Mesh`
-5. To make the hotspot automatically turn on when starting the board (so that it works when using it on your standalone device once finished without needing to start it manually): `sudo nmcli connection modify CYD_AI_Mesh connection.autoconnect yes`
+2. Click on the LLM brick and download the AI model (Qwen if you have 2GB of ram or Gemma if you have 4GB)
+3. Run the program once so it can set up and download all the libraries then stop it once it's fully booted.
+4. Open the command prompt on the app lab and create the hotspot connection that we'll need to make the UNO Q communicate with the ESP32 CYD by issuing this command: `sudo nmcli device wifi hotspot ssid CYD_AI_Mesh password ArduinoUnoQ123`
+5. To start the hotspot then type this into the command prompt and hit send: `sudo nmcli connection up CYD_AI_Mesh`
+6. To make the hotspot automatically turn on when starting the board (so that it works when using it on your standalone device once finished without needing to start it manually): `sudo nmcli connection modify CYD_AI_Mesh connection.autoconnect yes`
 
 # Setup for ESP32 CYD
 
