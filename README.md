@@ -10,7 +10,7 @@ For this device you will need two components:
 
 # Setup for Arduino UNO Q
 
-1. Go into the app lab, then go to apps, click on create new app - import app and select the zip folder "uno-q-ai".
+1. Go into the app lab, then go to apps, click on create new app - import app and select the zip folder "cyberdeck.zip".
 2. Click on the LLM brick and download the AI model (Qwen if you have 2GB of ram or Gemma if you have 4GB)
 3. Run the program once so it can set up and download all the libraries then stop it once it's fully booted.
 4. Open the command prompt on the app lab and create the hotspot connection that we'll need to make the UNO Q communicate with the ESP32 CYD by issuing this command: `sudo nmcli device wifi hotspot ssid CYD_AI_Mesh password ArduinoUnoQ123`
@@ -24,7 +24,7 @@ For this device you will need two components:
 3. In the board connection settings, set the board as "ESP32 Wrover Module"
 4. Download the following libraries from the library manager: ArduinoWebsockets by Gil Maimon, TFT_eSPI by Bodmer, XPT2046_Touchscreen by Paul Stoffregen
 5. On your PC, head to Documents/Arduino/libraries/TFT_eSPI and replace User_Setup and User_Setup_Select with the provided files
-6. Upload the sketch to the ESP32 CYD
+6. Upload the cyberdeck_display sketch to the ESP32 CYD
 
 # Wiring
 
