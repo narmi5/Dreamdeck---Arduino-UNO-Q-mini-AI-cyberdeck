@@ -1,4 +1,8 @@
-# Portable-AI-device
+# Dreamdeck 0.1 - AI cyberdeck
+
+The Dreamdeck is an AI cyberdeck that features plenty of features such as a chat with an offline, local AI, a morse code translator and emitter, dht11 temperature and humidity control, buzzer piano, command terminal and other utility features.
+
+# Requirements
 
 For this device you will need two components:
 1. Arduino UNO Q ( https://www.amazon.com/ABX00173-Dragonwing-microprocessor-STM32U585-Microcontroller/dp/B0GFN669S4/ )
@@ -26,8 +30,36 @@ For this device you will need two components:
 
 To have both boards running with only one plugged grab the JST wires provided with the ESP32 CYD in the box (the one with 2 wires, black and red) and plug it into the 5V and GND ports on the back of the CYD, then use 2 jumper wires to connect the red one to 5V and the black one to GND on the Arduino.
 
+# GPIO
+
+Currently, the deck supports interactions with the following components: passive buzzer, built in led, dht11 temperature and humidity sensor.
+These components are not mandatory for the cyberdeck to work, but they unlock some interesting functions:
+1. Connect the buzzer do D3 and GND to use the piano inside the GPIO section
+2. Connect the DHT11 to A0, 3.3V and GND to see temperature and humidity in the sensor section
+
 # Notes
 
 1. You can attach the UNO Q to a powerbank so that it works as a standalone device.
 2. When plugging/turning on the device, the CYD will fail its initial attempt to connect to the UNO Q, that's completely normal since the Arduino is still booting. When ready, a pulsing heart animation will appear on the LED matrix; when that happens, press the RESET button on the back of the CYD so that it's able to connect.
 3. Since the display is quite small, use the stylus to type on the keyboard.
+
+# IMPORTANT FOR MORSE CODE
+
+To translate sentences to and from morse code, head to the AI section and type MORSE before your sentence. You can either choose to translate from morse code, or to morse code, in which case the built in led will blink the sequence before outputting the translation. Don't use punctuation if you're translating to morse and don't use letters if you're translating from morse (except for the word "morse" at the start).
+
+# TERMINAL COMMAND LIST
+
+| Command    | Purpose                                         |
+| ---------- | ----------------------------------------------- |
+| `ls`       | Lists files and directories                     |
+| `pwd`      | Shows the current directory                     |
+| `whoami`   | Shows the current user                          |
+| `uname`    | Shows system/kernel information                 |
+| `date`     | Shows the current date and time                 |
+| `uptime`   | Shows how long the UNO Q has been running       |
+| `df`       | Shows disk/storage usage                        |
+| `free`     | Shows RAM/memory usage                          |
+| `hostname` | Shows the device hostname                       |
+| `ip`       | Shows network/interface information             |
+| `neofetch` | Displays a formatted system-information summary |
+
