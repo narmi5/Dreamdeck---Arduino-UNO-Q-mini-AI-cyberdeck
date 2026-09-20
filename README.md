@@ -1,4 +1,4 @@
-# Dreamdeck 0.1 - AI cyberdeck
+# Dreamdeck 0.2 - AI cyberdeck
 
 The Dreamdeck is an AI cyberdeck that features plenty of features such as a chat with an offline, local AI, a morse code translator and emitter, dht11 temperature and humidity control, buzzer piano, command terminal and other utility features.
 
